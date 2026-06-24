@@ -187,6 +187,66 @@ export default function NICUJourneyPage() {
         </ScrollReveal>
       </section>
 
+      {/* NEW CONTENT: NICU FEEDING TUBES AND LINES */}
+      <section className="bg-brand-white border border-brand-coral/15 rounded-3xl p-8 md:p-12 shadow-soft grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-fade-in">
+        <div className="lg:col-span-7 space-y-6">
+          <ScrollReveal direction="right">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-coral/10 text-brand-coral border border-brand-coral/25">
+              Support Systems
+            </span>
+            <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep mt-2">
+              NICU Intravenous Lines & Feeding Tubes Explained
+            </h2>
+            <p className="text-brand-brown text-sm md:text-base leading-relaxed mt-4">
+              To support growth and deliver medications, clinical teams use specialized lines and tubes. Seeing these on a small baby can be overwhelming. Understanding their design helps families feel more informed:
+            </p>
+            <ul className="space-y-4 text-brand-brown text-xs md:text-sm">
+              <li>
+                <strong className="text-brand-deep block">Nasogastric (NG) and Orogastric (OG) Tubes:</strong>
+                A soft, thin tube inserted through the nose (NG) or mouth (OG) directly into the stomach. These bypass the need to suck or swallow, letting your baby receive expressed breast milk safely.
+              </li>
+              <li>
+                <strong className="text-brand-deep block">PICC Lines (Peripherally Inserted Central Catheters):</strong>
+                A long, thin catheter inserted into a vein in the arm or leg and threaded to a larger vein near the heart. It delivers concentrated nutrition (TPN) and medications safely without repeated needle sticks.
+              </li>
+              <li>
+                <strong className="text-brand-deep block">Peripheral IV Lines:</strong>
+                Temporary plastic catheters inserted in small hand, foot, or scalp veins to deliver fluids, electrolytes, or antibiotics directly.
+              </li>
+            </ul>
+          </ScrollReveal>
+        </div>
+
+        <div className="lg:col-span-5 bg-brand-rose/20 rounded-2xl p-6 border border-brand-coral/10 space-y-4">
+          <ScrollReveal direction="left" className="space-y-4">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Discharge Readiness Checklist
+            </h3>
+            <p className="text-brand-brown text-xs">
+              Before the medical team clears your baby for home transition, the infant must achieve these key milestones:
+            </p>
+            <ul className="space-y-2 text-xs md:text-sm text-brand-brown">
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Temp Stability:** Maintain body temperature (36.5°C - 37.4°C) in an open crib for 24-48 hours.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Oral Feeding:** Take all feeds by breast or bottle without breathing effort or bradycardia events.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Weight Gain:** Gain weight consistently (typically 15-20g per day per kg) for several days.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Apnea Clearance:** No recent apnea/bradycardia events requiring physical stimulation.</span>
+              </li>
+            </ul>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* 5. DISCLAIMER & QUESTIONS */}
       <section className="space-y-6">
         <ScrollReveal direction="up" className="max-w-3xl mx-auto space-y-6 text-center">

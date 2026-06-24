@@ -9,8 +9,6 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
-    city: '',
     inquiryType: 'General Inquiry',
     message: '',
   });
@@ -38,11 +36,7 @@ export default function ContactForm() {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone Number is required';
-    } else if (!/^[0-9+\s-]{10,15}$/.test(formData.phone.trim())) {
-      newErrors.phone = 'Please enter a valid phone number (10-15 digits)';
-    }
+
 
     if (!formData.message.trim()) newErrors.message = 'Message is required';
 
@@ -73,8 +67,6 @@ export default function ContactForm() {
       setFormData({
         name: '',
         email: '',
-        phone: '',
-        city: '',
         inquiryType: 'General Inquiry',
         message: '',
       });
@@ -104,88 +96,45 @@ export default function ContactForm() {
           {errors.name && <p className="text-red-500 text-xs mt-1 font-medium">{errors.name}</p>}
         </div>
 
-        {/* Email and Phone Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {/* Email */}
-          <div>
-            <label htmlFor="contact-email" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-2">
-              Email Address <span className="text-brand-coral">*</span>
-            </label>
-            <input
-              type="email"
-              id="contact-email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className={`w-full px-4 py-3 rounded-2xl bg-brand-white border ${
-                errors.email ? 'border-red-500 focus:ring-red-200' : 'border-brand-coral/25 focus:ring-brand-coral/20'
-              } text-brand-deep placeholder-brand-brown/50 text-sm focus:outline-none focus:ring-4 transition-all duration-300`}
-              placeholder="name@example.com"
-              disabled={isLoading}
-            />
-            {errors.email && <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>}
-          </div>
-
-          {/* Phone Number */}
-          <div>
-            <label htmlFor="contact-phone" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-2">
-              Phone Number <span className="text-brand-coral">*</span>
-            </label>
-            <input
-              type="tel"
-              id="contact-phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              className={`w-full px-4 py-3 rounded-2xl bg-brand-white border ${
-                errors.phone ? 'border-red-500 focus:ring-red-200' : 'border-brand-coral/25 focus:ring-brand-coral/20'
-              } text-brand-deep placeholder-brand-brown/50 text-sm focus:outline-none focus:ring-4 transition-all duration-300`}
-              placeholder="e.g. +91 98765 43210"
-              disabled={isLoading}
-            />
-            {errors.phone && <p className="text-red-500 text-xs mt-1 font-medium">{errors.phone}</p>}
-          </div>
+        {/* Email Address */}
+        <div>
+          <label htmlFor="contact-email" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-2">
+            Email Address <span className="text-brand-coral">*</span>
+          </label>
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            className={`w-full px-4 py-3 rounded-2xl bg-brand-white border ${
+              errors.email ? 'border-red-500 focus:ring-red-200' : 'border-brand-coral/25 focus:ring-brand-coral/20'
+            } text-brand-deep placeholder-brand-brown/50 text-sm focus:outline-none focus:ring-4 transition-all duration-300`}
+            placeholder="name@example.com"
+            disabled={isLoading}
+          />
+          {errors.email && <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>}
         </div>
 
-        {/* City and Inquiry Type Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {/* City */}
-          <div>
-            <label htmlFor="contact-city" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-2">
-              City <span className="text-brand-brown/50 font-normal">(Optional)</span>
-            </label>
-            <input
-              type="text"
-              id="contact-city"
-              name="city"
-              value={formData.city}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-2xl bg-brand-white border border-brand-coral/25 focus:ring-brand-coral/20 text-brand-deep placeholder-brand-brown/50 text-sm focus:outline-none focus:ring-4 transition-all duration-300"
-              placeholder="e.g. Mumbai"
-              disabled={isLoading}
-            />
-          </div>
-
-          {/* Inquiry Type */}
-          <div>
-            <label htmlFor="contact-inquiry" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-2">
-              Inquiry Type <span className="text-brand-coral">*</span>
-            </label>
-            <select
-              id="contact-inquiry"
-              name="inquiryType"
-              value={formData.inquiryType}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-2xl bg-brand-white border border-brand-coral/25 focus:ring-brand-coral/20 text-brand-deep text-sm focus:outline-none focus:ring-4 transition-all duration-300 appearance-none cursor-pointer"
-              disabled={isLoading}
-            >
-              {inquiryOptions.map((opt) => (
-                <option key={opt} value={opt}>
-                  {opt}
-                </option>
-              ))}
-            </select>
-          </div>
+        {/* Inquiry Type */}
+        <div>
+          <label htmlFor="contact-inquiry" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-2">
+            Inquiry Type <span className="text-brand-coral">*</span>
+          </label>
+          <select
+            id="contact-inquiry"
+            name="inquiryType"
+            value={formData.inquiryType}
+            onChange={handleChange}
+            className="w-full px-4 py-3 rounded-2xl bg-brand-white border border-brand-coral/25 focus:ring-brand-coral/20 text-brand-deep text-sm focus:outline-none focus:ring-4 transition-all duration-300 appearance-none cursor-pointer"
+            disabled={isLoading}
+          >
+            {inquiryOptions.map((opt) => (
+              <option key={opt} value={opt}>
+                {opt}
+              </option>
+            ))}
+          </select>
         </div>
 
         {/* Message */}

@@ -111,6 +111,48 @@ export default function WhatIsPrematurity() {
         </div>
       </section>
 
+      {/* NEW CONTENT: BIRTH WEIGHT CLASSIFICATIONS */}
+      <section className="bg-brand-rose/20 rounded-3xl p-8 md:p-12 border border-brand-coral/15 space-y-8 animate-fade-in">
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto space-y-3">
+          <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+            Weight Categories
+          </span>
+          <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep">
+            Understanding Birth Weight Classifications
+          </h2>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            In neonatology, clinical care protocols depend not only on gestational weeks but also on the infant's birth weight.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-3 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Low Birth Weight (LBW)
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Infants weighing **less than 2,500 grams (2.5 kg)** at birth. This includes both preterm infants and full-term babies who are small for gestational age.
+            </p>
+          </div>
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-3 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Very Low Birth Weight (VLBW)
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Infants weighing **less than 1,500 grams (1.5 kg)** at birth. They generally require specialized incubators, oxygen support, and feeding assistance in the NICU.
+            </p>
+          </div>
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-3 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Extremely Low Birth Weight (ELBW)
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Infants weighing **less than 1,000 grams (1 kg)** at birth. They require intensive life support, surfactant administration, and complex clinical monitoring.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 4. MYTHS VS FACTS AND MATHEMATICAL MATRIX (NEW CONTENT) */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <ScrollReveal direction="right" className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 md:p-8 shadow-soft space-y-6">

@@ -94,6 +94,62 @@ export default function CareersPage() {
         </div>
       </section>
 
+      {/* NEW CONTENT: CANDIDATE EVALUATION & INTERVIEW MILESTONES */}
+      <section className="bg-brand-rose/20 border border-brand-coral/15 rounded-3xl p-6 md:p-8 space-y-6 animate-fade-in">
+        <ScrollReveal direction="up" className="space-y-2 text-center max-w-3xl mx-auto">
+          <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+            Hiring Process
+          </span>
+          <h2 className="text-xl md:text-3xl font-display font-extrabold text-brand-deep">
+            Our Recruitment Journey & Evaluation Framework
+          </h2>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            We maintain a thorough 3-step evaluation path to ensure all team members align with our medical accuracy and empathetic writing values.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-5 space-y-2 shadow-soft">
+            <span className="text-xs font-sans font-bold text-brand-coral uppercase block">Stage 1: Portfolio & Verification Review</span>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              We check your writing portfolio for experience with health literacy, structured copywriting style guidelines, or public health communications.
+            </p>
+          </div>
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-5 space-y-2 shadow-soft">
+            <span className="text-xs font-sans font-bold text-brand-coral uppercase block">Stage 2: Writing & Boundary Assessment</span>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Candidates complete a remote copywriting exercise translating a clinical pediatric abstract into a clear, parent-friendly guide.
+            </p>
+          </div>
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-5 space-y-2 shadow-soft">
+            <span className="text-xs font-sans font-bold text-brand-coral uppercase block">Stage 3: Cultural & Purpose Fit Review</span>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              A video conversation outlining our remote workflow, family-centric ethics, and strict compliance with our non-clinical disclaimer limits.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW CONTENT: FUTURE OPENINGS & VOLUNTEER REGISTRY */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-brand-white border border-brand-coral/15 rounded-3xl p-6 md:p-8 shadow-soft animate-fade-in">
+        <ScrollReveal direction="right" className="space-y-4">
+          <h3 className="font-display font-bold text-brand-deep text-lg md:text-xl">
+            Volunteer & Intern Registry
+          </h3>
+          <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+            Are you a student in public health, nursing, or communication design? We plan to open virtual internship and volunteer research programs in late 2026. Registered interns will help draft directory resources and sanitize checklist files under editorial supervision.
+          </p>
+        </ScrollReveal>
+        <ScrollReveal direction="left" className="bg-brand-rose/40 rounded-2xl p-6 border border-brand-coral/10 text-center space-y-3">
+          <h4 className="font-display font-bold text-brand-deep text-sm md:text-base">
+            Express Your Interest Early
+          </h4>
+          <p className="text-brand-brown text-xs">
+            Send an email to **careers@prematurite.com** with your academic focus area. We will keep your registry file active for future openings.
+          </p>
+        </ScrollReveal>
+      </section>
+
       {/* 4. CAREER APPLICATION FORM MODAL */}
       <CareerForm
         job={selectedJob}

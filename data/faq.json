@@ -98,5 +98,30 @@
     "category": "Medical Disclaimer",
     "question": "What should I do if my baby shows signs of illness?",
     "answer": "Do not rely on this website or any online source for diagnostic information. Contact your pediatrician or neonatologist immediately, or take your baby to the nearest emergency hospital if the symptoms appear severe or urgent."
+  },
+  {
+    "category": "Medical Disclaimer",
+    "question": "Who is responsible for verifying the safety of home care checklists?",
+    "answer": "All checklists and templates provided are for educational reference only. Parents must review and approve all log variables, sanitization changes, or feeding checklists directly with their pediatrician before implementation."
+  },
+  {
+    "category": "Growth and Development",
+    "question": "When does catch-up growth typically complete?",
+    "answer": "Most premature infants experience catch-up growth and reach standard height and weight percentiles compared to full-term peers by the age of two to two and a half years old."
+  },
+  {
+    "category": "Feeding and Nutrition",
+    "question": "What should I do if my baby experiences spit-up or mild reflux?",
+    "answer": "Position your baby upright at a thirty to forty-five-degree angle for twenty to thirty minutes after every feed. Avoid placing them in car seats or swings immediately. Discuss persistent or forceful spitting up with your pediatrician."
+  },
+  {
+    "category": "Home Care",
+    "question": "Can we use traditional baby massage oils on a preterm baby?",
+    "answer": "Premature baby skin is very thin and highly sensitive. Avoid traditional oil massages or heavy rubbing until your pediatrician has checked the infant's skin barrier and cleared the baby for massage."
+  },
+  {
+    "category": "NICU Journey",
+    "question": "What is an ROP screening, and why is it scheduled?",
+    "answer": "ROP stands for Retinopathy of Prematurity, an abnormal growth of blood vessels in the retina common in babies born before thirty-two weeks or under 1,500 grams. Regular eye examinations are scheduled in the NICU and after discharge to monitor development and prevent complications."
   }
 ]

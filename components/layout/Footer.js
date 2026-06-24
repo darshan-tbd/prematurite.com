@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Heart, Mail, Phone, MapPin } from 'lucide-react';
+import { Heart, Mail } from 'lucide-react';
 import companyData from '../../data/company.json';
 import navData from '../../data/navigation.json';
 
@@ -87,14 +87,6 @@ export default function Footer() {
                 <a href={`mailto:${companyData.email}`} className="hover:text-brand-coral break-all">
                   {companyData.email}
                 </a>
-              </li>
-              <li className="flex items-start space-x-3 text-sm text-brand-brown">
-                <Phone className="w-5 h-5 text-brand-coral flex-shrink-0 mt-0.5" />
-                <span>{companyData.phone}</span>
-              </li>
-              <li className="flex items-start space-x-3 text-sm text-brand-brown">
-                <MapPin className="w-5 h-5 text-brand-coral flex-shrink-0 mt-0.5" />
-                <span className="leading-tight">{companyData.address}</span>
               </li>
             </ul>
           </div>

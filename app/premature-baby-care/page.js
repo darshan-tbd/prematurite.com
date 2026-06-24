@@ -169,6 +169,87 @@ export default function PrematureBabyCarePage() {
         </ScrollReveal>
       </section>
 
+      {/* NEW CONTENT: PRETERM SKIN & BATHING PROTOCOLS */}
+      <section className="bg-brand-white border border-brand-coral/15 rounded-3xl p-8 md:p-12 shadow-soft grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-fade-in">
+        <div className="lg:col-span-7 space-y-6">
+          <ScrollReveal direction="right">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-coral/10 text-brand-coral border border-brand-coral/25">
+              Skin Care Standards
+            </span>
+            <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep mt-2">
+              Preterm Skin Hygiene & Sponge Bath Protocols
+            </h2>
+            <p className="text-brand-brown text-sm md:text-base leading-relaxed mt-4">
+              Preterm infants have an immature skin barrier that is thinner and more permeable than full-term skin. It absorbs topically applied chemicals rapidly and is highly vulnerable to friction, breakdown, and subsequent infection.
+            </p>
+            <p className="text-brand-brown text-sm md:text-base leading-relaxed">
+              Traditional daily tub baths and vigorous oil massages should be avoided until your pediatrician explicitly clears them. In the early weeks at home, limit cleaning to warm sponge baths (sponge-cleaning only the diaper area and skin folds) two to three times a week.
+            </p>
+          </ScrollReveal>
+        </div>
+
+        <div className="lg:col-span-5 bg-brand-rose/20 rounded-2xl p-6 border border-brand-coral/10 space-y-4">
+          <ScrollReveal direction="left" className="space-y-4">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Bathing Safety Checklist
+            </h3>
+            <ul className="space-y-3 text-xs md:text-sm text-brand-brown">
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Water Temp:** Use lukewarm water between 37.0°C and 37.5°C. Check with a bath thermometer.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Draft Prevention:** Bathe in a closed room with fans and AC turned off to block cold drafts.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Soap Selection:** Use only pH-neutral, dye-free, unscented liquid cleansers approved by your doctor.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Pat Dry:** Pat the skin dry with a soft sterile cotton cloth; do not rub skin folds.</span>
+              </li>
+            </ul>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* NEW CONTENT: TUMMY TIME & SAFE PLAY POSITIONING */}
+      <section className="bg-brand-rose/20 rounded-3xl p-8 border border-brand-coral/15 space-y-6 animate-fade-in">
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto space-y-3">
+          <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+            Physical Positioning
+          </span>
+          <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep">
+            Supervised Tummy Time & Positioning Protocols
+          </h2>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            While safe sleep guidelines strictly require placing your baby on their back in their own crib, supervised tummy time is critical for muscle growth in the neck, shoulders, and trunk.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-2 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Timing and Duration
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Start tummy time only after your baby's umbilical stump has fallen off and they have stabilized at home. Begin with brief sessions of **2 to 3 minutes, twice daily**, and gradually increase as they build muscle strength.
+            </p>
+          </div>
+
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-2 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Safe Tummy-Time Methods
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Perform tummy time on a clean, firm, flat blanket on the floor. You can also place the baby chest-to-chest on your body while semi-reclined. Never leave the baby unattended, and stop immediately if they show signs of fatigue or breathing effort.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 5. INTERNAL LINKS & CTAs */}
       <section className="space-y-8 max-w-3xl mx-auto text-center">
         <ScrollReveal direction="up" className="space-y-6">

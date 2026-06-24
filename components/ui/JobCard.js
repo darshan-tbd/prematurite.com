@@ -1,22 +1,17 @@
 import React from 'react';
-import { Briefcase, MapPin, Award } from 'lucide-react';
+import { Briefcase, Award } from 'lucide-react';
 import Button from './Button';
 
 export default function JobCard({ job, onApply }) {
-  const { title, department, location, description, requirements } = job;
+  const { title, department, description, requirements } = job;
 
   return (
     <div className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 md:p-8 shadow-soft flex flex-col justify-between h-full hover:border-brand-coral/30 hover:shadow-glow transition-all duration-300">
       <div>
-        {/* Department and Location badges */}
         <div className="flex flex-wrap gap-2 mb-4">
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-coral/10 text-brand-coral">
             <Briefcase className="w-3 h-3 mr-1" />
             {department}
-          </span>
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-apricot/20 text-brand-deep">
-            <MapPin className="w-3 h-3 mr-1" />
-            {location}
           </span>
         </div>
 

@@ -168,6 +168,54 @@ export default function FeedingNutritionPage() {
         </ScrollReveal>
       </section>
 
+      {/* NEW CONTENT: REFUX & SPITTING UP MANAGEMENT */}
+      <section className="bg-brand-white border border-brand-coral/15 rounded-3xl p-8 md:p-12 shadow-soft grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-fade-in">
+        <div className="lg:col-span-7 space-y-6">
+          <ScrollReveal direction="right">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-coral/10 text-brand-coral border border-brand-coral/25">
+              Feeding Comfort
+            </span>
+            <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep mt-2">
+              Managing Preterm Reflux & Spitting Up
+            </h2>
+            <p className="text-brand-brown text-sm md:text-base leading-relaxed mt-4">
+              Gastroesophageal reflux (spitting up) is very common in premature infants. The lower esophageal sphincter—the valve that keeps stomach contents in place—is physically immature, leading to effortless spitting up after feeds.
+            </p>
+            <p className="text-brand-brown text-sm md:text-base leading-relaxed">
+              To support digestion and reduce discomfort, hold your baby in an upright position (at a thirty to forty-five-degree angle) for at least twenty to thirty minutes after every feed. Avoid placing the infant in a car seat or swing immediately after feeds, as this compresses the abdomen.
+            </p>
+          </ScrollReveal>
+        </div>
+
+        <div className="lg:col-span-5 bg-brand-rose/20 rounded-2xl p-6 border border-brand-coral/10 space-y-4">
+          <ScrollReveal direction="left" className="space-y-4">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              SSB Coordination Milestones
+            </h3>
+            <p className="text-brand-brown text-xs">
+              Sucking, Swallowing, and Breathing (SSB) coordination is a complex neurological milestone that generally develops between **34 and 36 gestational weeks**:
+            </p>
+            <ul className="space-y-2 text-xs md:text-sm text-brand-brown">
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Sucking Reflex:** Requires coordinates rhythmic lip sealing and cheek compression.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Swallowing:** Propels milk to the pharynx, closing the airway epiglottis temporarily.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Breathing:** Rhythmic respiratory cycles resume immediately after swallowing occurs.</span>
+              </li>
+            </ul>
+            <p className="text-[10px] text-brand-brown/70 italic leading-relaxed">
+              If your infant chokes, coughs, or changes color during feeds, stop feeding immediately and consult your medical team.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* 5. CLINICAL CALLOUT & DISCLAIMER */}
       <section className="space-y-6">
         <ScrollReveal direction="up" className="max-w-3xl mx-auto space-y-6 text-center">

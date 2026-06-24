@@ -17,6 +17,7 @@ export default function DoctorQuestionsChecklist() {
     { id: 'milestones', name: 'Growth & Milestones' },
     { id: 'discharge', name: 'Discharge Prep' },
     { id: 'followup', name: 'Follow-up Visits' },
+    { id: 'referrals', name: 'Specialist Referrals' },
     { id: 'emergency', name: 'Emergency Signs' },
     { id: 'home', name: 'Home Care' }
   ];
@@ -77,6 +78,13 @@ export default function DoctorQuestionsChecklist() {
       'How many wet and dirty diapers should we expect in a twenty-four hour period?',
       'What visitor restrictions and hand hygiene protocols must we enforce?',
       'How do we sanitize diaper changing surfaces and feeding items safely?'
+    ],
+    referrals: [
+      'Has our baby been screened for Retinopathy of Prematurity (ROP), and when is the next ophthalmology follow-up scheduled?',
+      'Has a newborn hearing screening (OAE/AABR audiology test) been completed before discharge?',
+      'Are early intervention occupational or physical therapy consults recommended to monitor motor progress?',
+      'Does our baby require follow-up visits with a pediatric cardiologist or pulmonologist?',
+      'Who coordinates the referral bookings and sends clinical summaries to these specialists?'
     ]
   };
 

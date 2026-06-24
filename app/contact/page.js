@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Mail, Phone, MapPin, Clock, AlertTriangle, ShieldAlert } from 'lucide-react';
+import { Mail, AlertTriangle, ShieldAlert } from 'lucide-react';
 import ContactForm from '@/components/ui/ContactForm';
 import InquiryForm from '@/components/ui/InquiryForm';
 import DisclaimerBox from '@/components/ui/DisclaimerBox';
@@ -51,7 +51,7 @@ export default function ContactPage() {
         <div className="lg:col-span-4 space-y-8 lg:sticky lg:top-24">
           <div className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 md:p-8 shadow-soft space-y-6">
             <h3 className="font-display font-bold text-brand-deep text-lg border-b border-brand-coral/10 pb-3">
-              Office Details
+              Contact Details
             </h3>
 
             <ul className="space-y-4 text-brand-brown text-sm">
@@ -64,40 +64,7 @@ export default function ContactPage() {
                   </a>
                 </div>
               </li>
-              <li className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-brand-coral mt-0.5 flex-shrink-0" />
-                <div>
-                  <strong className="text-brand-deep block font-display">Phone Helpline</strong>
-                  <span>{companyData.phone}</span>
-                </div>
-              </li>
-              <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-brand-coral mt-0.5 flex-shrink-0" />
-                <div>
-                  <strong className="text-brand-deep block font-display">Office Address</strong>
-                  <span>{companyData.address}</span>
-                </div>
-              </li>
-              <li className="flex items-start space-x-3">
-                <Clock className="w-5 h-5 text-brand-coral mt-0.5 flex-shrink-0" />
-                <div>
-                  <strong className="text-brand-deep block font-display">Business Hours</strong>
-                  <span>Monday to Friday: 09:00 AM - 05:00 PM IST (Placeholder hours)</span>
-                </div>
-              </li>
             </ul>
-          </div>
-
-          {/* Map placeholder */}
-          <div className="bg-brand-rose/40 border border-brand-coral/15 rounded-3xl p-6 text-center space-y-4 shadow-soft">
-            <h3 className="font-display font-bold text-brand-deep text-sm md:text-base">
-              Office Location Map
-            </h3>
-            <div className="h-48 bg-brand-white border border-brand-coral/10 rounded-2xl flex items-center justify-center p-4">
-              <p className="text-brand-brown text-xs">
-                [Static Map Image Placeholder - Original map script integration will be updated later without external scripts]
-              </p>
-            </div>
           </div>
         </div>
 
@@ -113,6 +80,63 @@ export default function ContactPage() {
 
           {/* Quick Inquiry Form */}
           <InquiryForm />
+        </div>
+      </section>
+
+      {/* NEW CONTENT: INQUIRY RESOLUTION & HELPLINE FAQs */}
+      <section className="bg-brand-rose/10 border border-brand-coral/15 rounded-3xl p-6 md:p-8 space-y-6 animate-fade-in">
+        <ScrollReveal direction="up" className="space-y-2 text-center max-w-3xl mx-auto">
+          <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+            Inquiry Guidance
+          </span>
+          <h2 className="text-xl md:text-3xl font-display font-extrabold text-brand-deep">
+            How We Handle Your Queries & Feedback
+          </h2>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            Please read these guidelines to understand the scope of our helpline communications.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+          <div className="space-y-4">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Queries We Respond To:
+            </h3>
+            <ul className="space-y-3 text-xs md:text-sm text-brand-brown">
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Resource Requests:** Inquiries regarding printable milestone checklists, sanitization logs, and feeding schedules.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Educational Suggestions:** Requests for new topics, terms, or calculators that our editorial team should cover.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Technical Support:** Help regarding website display bugs, PDF downloads, or form submission errors.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="font-display font-bold text-brand-deep text-base text-red-700">
+              Queries We Strictly Reject:
+            </h3>
+            <ul className="space-y-3 text-xs md:text-sm text-brand-brown">
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span className="text-red-900 font-medium">**Clinical Diagnoses:** E.g., "My baby weighs 1.5kg, are they breathing normally?"</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span className="text-red-900 font-medium">**Medication Adjustments:** Requests regarding drug dosages, brand names, or formula changes.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span className="text-red-900 font-medium">**Emergency Advice:** Queries during infant respiratory pauses or temperature drop emergencies. Contact hospitals immediately instead.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

@@ -207,6 +207,169 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NEW CONTENT: CORRECTED AGE EXPLAINER & METRIC LOGS */}
+      <section className="py-16 md:py-24 bg-brand-white px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-5 relative flex justify-center order-last lg:order-first">
+            <ScrollReveal direction="right" className="w-full max-w-sm sm:max-w-md">
+              <div className="bg-brand-rose/40 border border-brand-coral/15 rounded-3xl p-6 md:p-8 space-y-4">
+                <h3 className="font-display font-bold text-brand-deep text-base md:text-lg">
+                  Milestone Adjustments Example
+                </h3>
+                <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                  Comparing standard term milestones to adjusted timelines helps parents set realistic developmental expectations:
+                </p>
+                <div className="space-y-3">
+                  <div className="bg-brand-white rounded-xl p-3 border border-brand-coral/10">
+                    <span className="text-[10px] font-sans font-bold uppercase text-brand-coral block">At 4 Months Calendar Age:</span>
+                    <p className="text-brand-brown text-xs">Standard charts expect complete head control and active reaching. A baby born 2 months early should be evaluated against 2-month milestones instead.</p>
+                  </div>
+                  <div className="bg-brand-white rounded-xl p-3 border border-brand-coral/10">
+                    <span className="text-[10px] font-sans font-bold uppercase text-green-600 block">At 2 Months Corrected Age:</span>
+                    <p className="text-brand-brown text-xs">Preterm baby tracks objects visually, smiles responsively, and lifts head during tummy time. Development is healthy and on track.</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          <div className="lg:col-span-7 space-y-6">
+            <ScrollReveal direction="left">
+              <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+                Milestone Tracking
+              </span>
+              <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep mt-2">
+                Understanding Milestone Shifts
+              </h2>
+              <p className="text-brand-brown text-sm md:text-base leading-relaxed mt-4">
+                When a baby is born early, their physical systems require additional time to grow outside the womb. Evaluating their motor skills, speech cooing, and cognitive tracking against standard calendar age charts leads to unnecessary family anxiety.
+              </p>
+              <p className="text-brand-brown text-sm md:text-base leading-relaxed">
+                By adjusting milestones using **corrected gestational age** (chronological weeks minus weeks born early), parents can track progress accurately. Our interactive milestone simulator helps perform this math automatically, aligning expectations with your pediatrician's parameters.
+              </p>
+              <div className="pt-2">
+                <Button href="/growth-milestones/" id="home-milestones-btn">
+                  Launch Milestone Calculator
+                </Button>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW CONTENT: NURSERY SAFETY & SANITATION STANDARDS */}
+      <section className="py-16 md:py-24 bg-brand-rose/10 px-4 border-t border-brand-coral/10">
+        <div className="max-w-7xl mx-auto">
+          <ScrollReveal direction="up">
+            <SectionHeading
+              subtitle="Safety Benchmarks"
+              title="Nursery Preparation & Home Care Standards"
+            />
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ScrollReveal direction="up" delay={0.1} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft">
+              <h3 className="font-display font-bold text-brand-deep text-base mb-2">
+                Nursery Heat Control
+              </h3>
+              <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                Preterm infants lose body heat rapidly due to low subcutaneous fat. Maintain room temperatures strictly between 22 and 24 degrees Celsius. Dress the baby in layers and keep cribs away from AC drafts.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.2} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft">
+              <h3 className="font-display font-bold text-brand-deep text-base">
+                Sanitization Stations
+              </h3>
+              <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                Enforce hand sanitation from fingertips to elbows for all primary caregivers. Sanitize keys, handle surfaces, and phones regularly to keep the immediate nursery environment safe from common viral particles.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.3} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft">
+              <h3 className="font-display font-bold text-brand-deep text-base">
+                Hydration Diaper Checks
+              </h3>
+              <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                Count daily wet diapers closely. A healthy preterm baby should wet at least six diapers in twenty-four hours. Urates or reddish brick-dust spots indicate mild dehydration, requiring pediatrician follow-ups.
+              </p>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW CONTENT: HOME TRANSITION SAFETY MATRIX */}
+      <section className="py-16 md:py-24 bg-brand-white px-4 border-t border-brand-coral/10">
+        <div className="max-w-7xl mx-auto space-y-12">
+          <ScrollReveal direction="up">
+            <SectionHeading
+              subtitle="Home Transition"
+              title="Standard Baby Care vs. Preterm Care Priorities"
+            />
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <ScrollReveal direction="right" className="bg-brand-rose/10 border border-brand-coral/15 rounded-3xl p-6 md:p-8 space-y-6">
+              <h3 className="font-display font-bold text-brand-deep text-lg">
+                Standard Full-Term Care Basics
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-brand-brown/40 flex-shrink-0 mt-2 mr-3" />
+                  <div>
+                    <strong className="text-brand-deep text-sm block">Home Temperature Settings</strong>
+                    <p className="text-brand-brown text-xs md:text-sm">Standard rooms can rely on normal fan speeds or open windows depending on the season, as full-term infants self-regulate body heat easily.</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-brand-brown/40 flex-shrink-0 mt-2 mr-3" />
+                  <div>
+                    <strong className="text-brand-deep text-sm block">Visitor Guidelines</strong>
+                    <p className="text-brand-brown text-xs md:text-sm">Friends and extended family members are typically welcomed to meet the baby within the first few weeks, requiring only basic hand washing.</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-brand-brown/40 flex-shrink-0 mt-2 mr-3" />
+                  <div>
+                    <strong className="text-brand-deep text-sm block">Feed Scheduling</strong>
+                    <p className="text-brand-brown text-xs md:text-sm">Healthy infants can be fed on-demand when they cry, adjusting their intake naturally without rigid time-logging trackers.</p>
+                  </div>
+                </li>
+              </ul>
+            </ScrollReveal>
+
+            <ScrollReveal direction="left" className="bg-brand-rose/40 border border-brand-coral/25 rounded-3xl p-6 md:p-8 space-y-6 shadow-glow">
+              <h3 className="font-display font-bold text-brand-deep text-lg flex items-center text-brand-coral">
+                Preterm Home-Care Priorities
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-brand-coral flex-shrink-0 mt-2 mr-3" />
+                  <div>
+                    <strong className="text-brand-deep text-sm block">Thermal Environment Control</strong>
+                    <p className="text-brand-brown text-xs md:text-sm">Requires rooms strictly set at 22-24 degrees Celsius. Drafts from AC vents must be blocked, and babies require specific cotton-layer wrapping.</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-brand-coral flex-shrink-0 mt-2 mr-3" />
+                  <div>
+                    <strong className="text-brand-deep text-sm block">Visitor Isolation Protocol</strong>
+                    <p className="text-brand-brown text-xs md:text-sm">Restrict direct visitors for the first three months. Ensure primary caretakers sanitize hands, arms, keys, and phone screens before entry.</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-2 h-2 rounded-full bg-brand-coral flex-shrink-0 mt-2 mr-3" />
+                  <div>
+                    <strong className="text-brand-deep text-sm block">Rigid Intake & Output Logs</strong>
+                    <p className="text-brand-brown text-xs md:text-sm">Feeds must follow pediatrician-prescribed schedules (often every 2-3 hours) regardless of sleep, with daily wet-diaper outputs tracked in written logs.</p>
+                  </div>
+                </li>
+              </ul>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* 5. PARENT EDUCATION JOURNEY SECTION */}
       <section className="py-16 md:py-24 bg-brand-white px-4">
         <div className="max-w-7xl mx-auto">
@@ -283,6 +446,121 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NEW CONTENT: COMMON NICU TERMINOLOGY REFERENCE INDEX */}
+      <section className="py-16 md:py-24 bg-brand-rose/10 px-4 border-t border-brand-coral/10">
+        <div className="max-w-7xl mx-auto space-y-12">
+          <ScrollReveal direction="up">
+            <SectionHeading
+              subtitle="Reference Index"
+              title="Common NICU Terminology Explained"
+            />
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ScrollReveal direction="up" className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft space-y-3">
+              <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-brand-coral">Respiratory Support</span>
+              <h3 className="font-display font-bold text-brand-deep text-base">Surfactant</h3>
+              <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                A naturally occurring liquid substance that keeps the tiny air sacs (alveoli) in the lungs open. Premature infants born before thirty-two weeks often lack sufficient surfactant, requiring hospital clinical administration to assist normal breathing.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.1} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft space-y-3">
+              <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-brand-coral">Breathing Assistance</span>
+              <h3 className="font-display font-bold text-brand-deep text-base">CPAP & HFNC</h3>
+              <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                Continuous Positive Airway Pressure (CPAP) and High-Flow Nasal Cannula (HFNC) are non-invasive methods that deliver warmed, humidified oxygen under mild pressure to keep the infant's airway open, reducing breathing effort.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.2} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft space-y-3">
+              <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-brand-coral">Jaundice Treatment</span>
+              <h3 className="font-display font-bold text-brand-deep text-base">Bilirubin & Phototherapy</h3>
+              <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                Bilirubin is a yellow pigment created by the normal breakdown of red blood cells. Preterm livers process it slowly. Phototherapy uses blue lights to help break down bilirubin through the skin so it can be excreted easily.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.3} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft space-y-3 font-sans">
+              <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-brand-coral">Nutrition Delivery</span>
+              <h3 className="font-display font-bold text-brand-deep text-base">TPN & Gavage Tube</h3>
+              <p className="text-brand-brown text-xs md:text-sm leading-relaxed font-sans">
+                Total Parenteral Nutrition (TPN) delivers vital nutrients directly into the bloodstream. Gavage feeding routes expressed breast milk directly into the stomach via a soft tube in the nose or mouth, bypassing coordinate sucking difficulties.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.4} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft space-y-3">
+              <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-brand-coral">Vital Signs Monitoring</span>
+              <h3 className="font-display font-bold text-brand-deep text-base">Apnea & Bradycardia</h3>
+              <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                Apnea represents a pause in breathing lasting longer than twenty seconds. Bradycardia refers to a temporary drop in heart rate below typical infant levels. Both are common in premature infants as their neurological systems mature.
+              </p>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.5} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft space-y-3 flex flex-col justify-between">
+              <div>
+                <span className="text-[10px] font-sans font-bold uppercase tracking-wider text-brand-coral">Newborn Score</span>
+                <h3 className="font-display font-bold text-brand-deep text-base">Apgar Score</h3>
+                <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+                  A quick physical rating system checked at one and five minutes after birth evaluating muscle tone, heart rate, reflexes, skin color, and breathing effort. It helps doctors decide if immediate assistance is needed.
+                </p>
+              </div>
+              <div className="pt-2 border-t border-brand-coral/10 mt-3">
+                <Link href="/what-is-prematurity/" className="inline-flex items-center text-xs font-bold text-brand-coral hover:underline">
+                  Explore Preterm Terms <ArrowRight className="w-3 h-3 ml-1" />
+                </Link>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW CONTENT: TESTIMONIAL PREVIEW WALL */}
+      <section className="py-16 md:py-24 bg-brand-rose/20 px-4 border-y border-brand-coral/10">
+        <div className="max-w-7xl mx-auto">
+          <ScrollReveal direction="up">
+            <SectionHeading
+              subtitle="Testimonials Overview"
+              title="Parent Support Feedback"
+            />
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <ScrollReveal direction="up" delay={0.1} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft">
+              <p className="text-brand-deep text-sm italic mb-4">
+                "Prematurite helped us understand the basics of premature baby care in simple language. It gave our family better clarity before speaking with our doctor."
+              </p>
+              <h4 className="font-display font-bold text-brand-deep text-xs">A Mother from Vadodara</h4>
+              <span className="text-[10px] text-brand-brown">Parent of late-preterm infant</span>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.2} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft">
+              <p className="text-brand-deep text-sm italic mb-4">
+                "The explanation of corrected age saved us so much worry. We were comparing our child to full-term milestones, but the resources here explained the right math."
+              </p>
+              <h4 className="font-display font-bold text-brand-deep text-xs">A Father from Pune</h4>
+              <span className="text-[10px] text-brand-brown">Parent of very preterm infant</span>
+            </ScrollReveal>
+
+            <ScrollReveal direction="up" delay={0.3} className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 shadow-soft">
+              <p className="text-brand-deep text-sm italic mb-4">
+                "Entering the NICU was terrifying. The guides explaining common hospital equipment and terms helped us feel like partners in our baby's care rather than outsiders."
+              </p>
+              <h4 className="font-display font-bold text-brand-deep text-xs">A Parent from Bengaluru</h4>
+              <span className="text-[10px] text-brand-brown">Parent of moderately preterm infant</span>
+            </ScrollReveal>
+          </div>
+
+          <div className="text-center mt-12">
+            <ScrollReveal direction="up">
+              <Button href="/testimonials/" variant="outline" id="view-testimonials-btn">
+                Read All 10 Testimonials
+              </Button>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* 6. PARENT STORIES PREVIEW */}
       <section className="py-16 md:py-24 bg-brand-rose/10 px-4 border-t border-brand-coral/10">
         <div className="max-w-7xl mx-auto">
@@ -349,6 +627,59 @@ export default function Home() {
               <Button href="/blog/" variant="primary" id="view-blog-posts-btn">
                 Explore Blog Directory
               </Button>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW CONTENT: PARENT SUPPORT & CAREGIVER WELLNESS */}
+      <section className="py-16 md:py-24 bg-brand-white px-4 border-t border-brand-coral/10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-7 space-y-6">
+            <ScrollReveal direction="right">
+              <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+                Caregiver Mental Health
+              </span>
+              <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep mt-2">
+                Supporting Parent Wellness Through the NICU Journey
+              </h2>
+              <p className="text-brand-brown text-sm md:text-base leading-relaxed mt-4">
+                Having a baby in the NICU is an emotional roller coaster. It is completely normal for parents to feel overwhelmed, anxious, or isolated. Your physical and emotional well-being directly impacts your ability to care for your infant.
+              </p>
+              <p className="text-brand-brown text-sm md:text-base leading-relaxed">
+                We believe in providing holistic education. That means advocating for parent self-care, establishing healthy sleep rotations, dividing household tasks with partners, and recognizing postpartum mood changes. Our parent support resources provide clear guidelines to help families process their journeys.
+              </p>
+              <div className="pt-2">
+                <Button href="/parent-support/" id="home-support-btn">
+                  Explore Parent Support Guides
+                </Button>
+              </div>
+            </ScrollReveal>
+          </div>
+
+          <div className="lg:col-span-5 bg-brand-rose/40 border border-brand-coral/15 rounded-3xl p-6 md:p-8 space-y-6">
+            <ScrollReveal direction="left" className="space-y-4">
+              <h3 className="font-display font-bold text-brand-deep text-base">
+                Parent Self-Care Checklist
+              </h3>
+              <ul className="space-y-3 text-xs md:text-sm text-brand-brown">
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                  <span>Establish a structured sleep rotation schedule with your partner.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                  <span>Drink at least 8-10 glasses of water daily, especially if pumping milk.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                  <span>Take a daily 15-minute walk outside the hospital or home environment.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                  <span>Accept help from friends for meals, laundry, or home sanitation chores.</span>
+                </li>
+              </ul>
             </ScrollReveal>
           </div>
         </div>

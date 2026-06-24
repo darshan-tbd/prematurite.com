@@ -45,6 +45,48 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* NEW CONTENT: EDUCATIONAL SERVICE FRAMEWORK */}
+      <section className="bg-brand-rose/20 rounded-3xl p-8 md:p-12 border border-brand-coral/15 space-y-8 animate-fade-in">
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto space-y-3">
+          <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+            Educational Design
+          </span>
+          <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep">
+            Our Digital Health Education Framework
+          </h2>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            All 12 core care topics are structured using a specific educational framework to ensure optimal learning outcomes for families.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-3 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Target Caregiver Audience
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Designed specifically for parents, grandparents, and immediate home caregivers in India who are navigating the transition from intensive hospital settings to home environments.
+            </p>
+          </div>
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-3 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Accessible Formats
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Delivered through mobile-first text, searchable directory grids, printable question sheets, and offline-compatible log calculators to fit into busy hospital routines.
+            </p>
+          </div>
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-3 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Cognitive Stress Reduction
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Focuses on building confidence and reducing anxiety by explaining complex medical terms simply and providing actionable boundaries logs and checklists.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 3. MEDICAL DISCLAIMER & SUPPORT POSITIONING */}
       <section className="space-y-6 max-w-3xl mx-auto">
         <DisclaimerBox />

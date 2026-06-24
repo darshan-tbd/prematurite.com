@@ -9,8 +9,6 @@ export default function CareerForm({ job, isOpen, onClose }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
-    location: '',
     coverLetter: '',
   });
   const [resume, setResume] = useState(null);
@@ -30,13 +28,7 @@ export default function CareerForm({ job, isOpen, onClose }) {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required';
-    } else if (!/^[0-9+\s-]{10,15}$/.test(formData.phone.trim())) {
-      newErrors.phone = 'Please enter a valid phone number';
-    }
 
-    if (!formData.location.trim()) newErrors.location = 'Current Location is required';
 
     if (!resume) {
       newErrors.resume = 'Resume upload is required';
@@ -70,34 +62,13 @@ export default function CareerForm({ job, isOpen, onClose }) {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsLoading(true);
 
-    try {
-      // Simulate real API post to the fake URL
-      // Ignore response or error as instructed
-      await fetch('https://prematurite.com/api/career-application', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ...formData,
-          jobId: job.id,
-          jobTitle: job.title,
-          resumeName: resume.name,
-        }),
-      }).catch(() => {
-        // Silently swallow errors
-      });
-    } catch (err) {
-      // Silently swallow errors
-    }
-
-    // Artificial delay for UI polish
+    // Artificial delay for UI polish and modal trigger
     setTimeout(() => {
       setIsLoading(false);
       setShowSuccess(true);
@@ -136,7 +107,7 @@ export default function CareerForm({ job, isOpen, onClose }) {
               {job.title}
             </h3>
             <p className="text-brand-brown text-xs md:text-sm mt-1">
-              Department: {job.department} | {job.location}
+              Department: {job.department}
             </p>
           </div>
 
@@ -161,64 +132,24 @@ export default function CareerForm({ job, isOpen, onClose }) {
               {errors.name && <p className="text-red-500 text-xs mt-1 font-medium">{errors.name}</p>}
             </div>
 
-            {/* Email & Phone Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="career-email" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-1.5">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  id="career-email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className={`w-full px-4 py-2.5 rounded-xl bg-brand-white border ${
-                    errors.email ? 'border-red-500' : 'border-brand-coral/20'
-                  } text-brand-deep placeholder-brand-brown/40 text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300`}
-                  placeholder="name@example.com"
-                  disabled={isLoading}
-                />
-                {errors.email && <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>}
-              </div>
-              <div>
-                <label htmlFor="career-phone" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-1.5">
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  id="career-phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className={`w-full px-4 py-2.5 rounded-xl bg-brand-white border ${
-                    errors.phone ? 'border-red-500' : 'border-brand-coral/20'
-                  } text-brand-deep placeholder-brand-brown/40 text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300`}
-                  placeholder="e.g. +91 98765 43210"
-                  disabled={isLoading}
-                />
-                {errors.phone && <p className="text-red-500 text-xs mt-1 font-medium">{errors.phone}</p>}
-              </div>
-            </div>
-
-            {/* Location */}
+            {/* Email Address */}
             <div>
-              <label htmlFor="career-location" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-1.5">
-                Current Location *
+              <label htmlFor="career-email" className="block text-xs font-sans font-bold uppercase tracking-wider text-brand-deep mb-1.5">
+                Email Address *
               </label>
               <input
-                type="text"
-                id="career-location"
-                name="location"
-                value={formData.location}
+                type="email"
+                id="career-email"
+                name="email"
+                value={formData.email}
                 onChange={handleChange}
                 className={`w-full px-4 py-2.5 rounded-xl bg-brand-white border ${
-                  errors.location ? 'border-red-500' : 'border-brand-coral/20'
+                  errors.email ? 'border-red-500' : 'border-brand-coral/20'
                 } text-brand-deep placeholder-brand-brown/40 text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300`}
-                placeholder="e.g. Bengaluru, Karnataka"
+                placeholder="name@example.com"
                 disabled={isLoading}
               />
-              {errors.location && <p className="text-red-500 text-xs mt-1 font-medium">{errors.location}</p>}
+              {errors.email && <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>}
             </div>
 
             {/* Resume Upload */}

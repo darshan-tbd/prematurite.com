@@ -153,6 +153,63 @@ export default function GrowthMilestonesPage() {
         </ScrollReveal>
       </section>
 
+      {/* NEW CONTENT: DEVELOPMENTAL RED FLAGS */}
+      <section className="bg-brand-white border border-brand-coral/15 rounded-3xl p-8 md:p-12 shadow-soft space-y-8 animate-fade-in">
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto space-y-3">
+          <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-red-500">
+            Developmental Warnings
+          </span>
+          <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep">
+            Milestone & Growth Red Flags
+          </h2>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            While preterm babies develop at their own pace, certain signs warrant immediate consultation with your pediatrician or early intervention specialist.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-brand-brown text-xs md:text-sm leading-relaxed">
+          <div className="space-y-4">
+            <h3 className="font-display font-bold text-red-800 text-base">
+              Motor & Tone Red Flags:
+            </h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Hypotonia:** Baby feels extremely floppy, with weak arm and leg resistance when handled.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Hypertonia:** Persistent muscle stiffness, clenched fists, or arching of the back when held.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Asymmetric Movement:** The baby consistently uses only one side of the body or drags one leg.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h3 className="font-display font-bold text-red-800 text-base">
+              Sensory & Social Red Flags:
+            </h3>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Visual Tracking Lack:** Failure to track objects visually or establish eye contact by 3 months corrected age.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Auditory Non-Response:** Failure to turn toward voices or startle at loud noises.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5 mr-2" />
+                <span>**Lack of Social Smile:** Failure to smile responsively or engage in early vocal cooing by 3 months corrected.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* 5. DISCLAIMER & ACTION */}
       <section className="space-y-6">
         <ScrollReveal direction="up" className="max-w-3xl mx-auto space-y-6 text-center">

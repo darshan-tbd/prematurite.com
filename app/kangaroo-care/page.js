@@ -153,6 +153,87 @@ export default function KangarooCarePage() {
         </ScrollReveal>
       </section>
 
+      {/* NEW CONTENT: SAFE HOME KANGAROO CARE (H-KMC) */}
+      <section className="bg-brand-white border border-brand-coral/15 rounded-3xl p-8 md:p-12 shadow-soft grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-fade-in">
+        <div className="lg:col-span-7 space-y-6">
+          <ScrollReveal direction="right">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-coral/10 text-brand-coral border border-brand-coral/25">
+              Home Care Guidelines
+            </span>
+            <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep mt-2">
+              Safe Home Kangaroo Mother Care (H-KMC) Protocols
+            </h2>
+            <p className="text-brand-brown text-sm md:text-base leading-relaxed mt-4">
+              Practicing Kangaroo Mother Care at home after hospital discharge provides continued support for your baby's transition. H-KMC helps maintain stable body temperature, reduces infant crying, and supports consistent lactation.
+            </p>
+            <p className="text-brand-brown text-sm md:text-base leading-relaxed">
+              When practicing at home, ensure the room is warm (between 22°C and 24°C) to prevent cold stress during transfers. Sit in a comfortable semi-reclined chair. If you feel tired or sleepy, transfer the baby back to their flat crib rather than risk sleeping with the baby on your chest, preventing accidental airways blockages.
+            </p>
+          </ScrollReveal>
+        </div>
+
+        <div className="lg:col-span-5 bg-brand-rose/20 rounded-2xl p-6 border border-brand-coral/10 space-y-4">
+          <ScrollReveal direction="left" className="space-y-4">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              H-KMC Safety Checklist
+            </h3>
+            <ul className="space-y-3 text-xs md:text-sm text-brand-brown">
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span><strong>Clear Airway:</strong> Turn baby's head to the side with their chin slightly upward (sniffing position).</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span><strong>Chest-to-Chest:</strong> Position baby vertically with their chest against yours, skin-to-skin.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span><strong>Secure Wrap:</strong> Secure the baby with a cotton wrap or binder, keeping their face visible.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+                <span><strong>No Co-Sleeping:</strong> Never sleep in a bed or chair while holding the baby in KMC.</span>
+              </li>
+            </ul>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* NEW CONTENT: SCIENCE OF CARDIORESPIRATORY STABILITY */}
+      <section className="bg-brand-rose/20 rounded-3xl p-8 border border-brand-coral/15 space-y-6 animate-fade-in">
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto space-y-3">
+          <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+            Biological Science
+          </span>
+          <h2 className="text-2xl md:text-3xl font-display font-extrabold text-brand-deep">
+            Science of Cardiorespiratory Stability & Growth
+          </h2>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            The biological impact of KMC on premature infants goes beyond simple bonding. Clinical trials demonstrate direct positive outcomes on vital metrics.
+          </p>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-2 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Heart Rate & Oxygen Stabilization
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              Hearing the parent's rhythmic heartbeat and feeling their chest breathing patterns helps stabilize the infant's own respiratory control. KMC reduces the frequency of apnea (breathing pauses) and bradycardia (heart rate drops) events significantly, encouraging optimal oxygen saturation (SpO2) levels.
+            </p>
+          </div>
+
+          <div className="bg-brand-white border border-brand-coral/10 rounded-2xl p-6 space-y-2 shadow-soft">
+            <h3 className="font-display font-bold text-brand-deep text-base">
+              Energy Conservation & Weight Gain
+            </h3>
+            <p className="text-brand-brown text-xs md:text-sm leading-relaxed">
+              When placed in skin-to-skin contact, the infant does not burn metabolic calories trying to maintain their own body heat. This energy conservation lets the baby channel calories directly into weight gain, accelerating growth and shortening hospital stays.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 5. HOSPITAL & SAFETY ADVICE */}
       <section className="space-y-6">
         <ScrollReveal direction="up" className="max-w-3xl mx-auto space-y-6 text-center">

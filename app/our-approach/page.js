@@ -101,6 +101,64 @@ export default function OurApproachPage() {
         </div>
       </section>
 
+      {/* NEW CONTENT: COPYWRITING QA STANDARDS */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center animate-fade-in">
+        <ScrollReveal direction="right" className="bg-brand-rose/40 border border-brand-coral/15 rounded-3xl p-6 md:p-8 space-y-6">
+          <h3 className="font-display font-bold text-brand-deep text-lg">
+            Our Copywriting Integrity Parameters
+          </h3>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            Writing health information for parents in high-stress environments requires strict discipline. We enforce four copywriting principles:
+          </p>
+          <ul className="space-y-4">
+            <li className="flex items-start">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+              <div>
+                <strong className="text-brand-deep text-xs md:text-sm block">Parent-Empowered Phrasing</strong>
+                <p className="text-brand-brown text-xs md:text-sm">We avoid passive or clinical distancing, using supportive active voice that guides parents on what they can directly observe and track.</p>
+              </div>
+            </li>
+            <li className="flex items-start">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+              <div>
+                <strong className="text-brand-deep text-xs md:text-sm block">Strict Non-Diagnostic Language</strong>
+                <p className="text-brand-brown text-xs md:text-sm">No text should say "Your baby has..." or "Treat this with...". We use "Observe if...", "Log these symptoms...", and "Discuss this with your neonatologist...".</p>
+              </div>
+            </li>
+            <li className="flex items-start">
+              <span className="w-1.5 h-1.5 rounded-full bg-brand-coral flex-shrink-0 mt-1.5 mr-2" />
+              <div>
+                <strong className="text-brand-deep text-xs md:text-sm block">No Commercial Influence</strong>
+                <p className="text-brand-brown text-xs md:text-sm">We write strictly on public health parameters. We never recommend brand names for formulas, diaper wipes, or clinical facilities.</p>
+              </div>
+            </li>
+          </ul>
+        </ScrollReveal>
+
+        <ScrollReveal direction="left" className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 md:p-8 shadow-soft space-y-6">
+          <h3 className="font-display font-bold text-brand-deep text-lg">
+            Quality Assurance Validation Loop
+          </h3>
+          <p className="text-brand-brown text-sm leading-relaxed">
+            Before any checklist, terminology description, or blog post is pushed to our production build, it goes through a verification flow:
+          </p>
+          <div className="space-y-3">
+            <div className="bg-brand-rose/20 rounded-xl p-3 border border-brand-coral/10">
+              <span className="text-[10px] font-sans font-bold uppercase text-brand-coral block">Check 1: Scientific Alignment</span>
+              <p className="text-brand-brown text-xs">Verify numbers (temperatures in Celsius, gestational ranges in weeks) match established WHO and IAP guidelines.</p>
+            </div>
+            <div className="bg-brand-rose/20 rounded-xl p-3 border border-brand-coral/10">
+              <span className="text-[10px] font-sans font-bold uppercase text-brand-coral block">Check 2: Linguistic Accessibility</span>
+              <p className="text-brand-brown text-xs">Check reading complexity scores. Replace dense medical terms with parent-friendly descriptions and tables.</p>
+            </div>
+            <div className="bg-brand-rose/20 rounded-xl p-3 border border-brand-coral/10">
+              <span className="text-[10px] font-sans font-bold uppercase text-brand-coral block">Check 3: Regulatory Compliance</span>
+              <p className="text-brand-brown text-xs">Review text to ensure no diagnostic suggestions, medication instructions, or clinical authority claims are present.</p>
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
+
       {/* 4. ACTIONS */}
       <section className="text-center space-y-6 max-w-3xl mx-auto">
         <ScrollReveal direction="up" className="space-y-6">

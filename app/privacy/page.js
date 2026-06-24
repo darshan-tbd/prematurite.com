@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
           1. Information We Collect
         </h2>
         <p>
-          If you contact us directly or submit an inquiry through our forms (General Contact Form, Quick Inquiry Form, Career Application Form), we may collect your name, email address, phone number, city, the message details you provide, and any attachments such as resumes.
+          If you contact us directly or submit an inquiry through our forms (General Contact Form, Quick Inquiry Form, Career Application Form), we may collect your name, email address, the message details you provide, and any attachments such as resumes.
         </p>
 
         <h2 className="font-display font-bold text-brand-deep text-lg md:text-xl mt-6">

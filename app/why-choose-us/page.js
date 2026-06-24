@@ -76,6 +76,62 @@ export default function WhyChooseUsPage() {
         })}
       </section>
 
+      {/* NEW CONTENT: PARENT RESOURCE COMPARISON MATRIX */}
+      <section className="space-y-12 animate-fade-in">
+        <ScrollReveal direction="up" className="text-center max-w-3xl mx-auto space-y-4">
+          <span className="text-xs md:text-sm font-sans font-bold tracking-widest uppercase text-brand-coral">
+            Direct Comparison
+          </span>
+          <h2 className="text-2xl md:text-4xl font-display font-extrabold text-brand-deep">
+            How We Differ From General Parenting Resources
+          </h2>
+          <p className="text-brand-brown text-sm md:text-base leading-relaxed">
+            Understanding the distinction between generalized blogs and our structured, non-commercial education.
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal direction="up" className="bg-brand-white border border-brand-coral/15 rounded-3xl p-6 md:p-8 shadow-soft overflow-hidden">
+          <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse text-xs md:text-sm">
+              <thead>
+                <tr className="border-b border-brand-coral/20 text-brand-deep font-bold text-sm bg-brand-rose/20">
+                  <th className="p-4 rounded-l-2xl">Comparison Metric</th>
+                  <th className="p-4">General Parenting Blogs</th>
+                  <th className="p-4 rounded-r-2xl text-brand-coral font-bold">Prematurite Digital Health</th>
+                </tr>
+              </thead>
+              <tbody className="text-brand-brown divide-y divide-brand-coral/10">
+                <tr>
+                  <td className="p-4 font-semibold text-brand-deep">Milestone Evaluation</td>
+                  <td className="p-4">Relies on calendar dates, frequently causing unnecessary anxiety when preterm infants lag behind.</td>
+                  <td className="p-4 font-medium text-brand-deep bg-brand-rose/10">Applies corrected gestational age mathematical adjustments to map real progress.</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-brand-deep">Content Verification</td>
+                  <td className="p-4">Often relies on casual opinions, user forums, or unchecked crowd-sourced advice.</td>
+                  <td className="p-4 font-medium text-brand-deep bg-brand-rose/10">Double-checked against verified clinical guides (IAP & WHO preterm care protocols).</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-brand-deep">Commercial Sponsorships</td>
+                  <td className="p-4">Monetized through baby formula banners, commercial diaper ads, and paid baby products.</td>
+                  <td className="p-4 font-medium text-brand-deep bg-brand-rose/10">Zero commercial sponsorships, zero formula promotions, and absolute educational focus.</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-brand-deep">Clinical Boundaries</td>
+                  <td className="p-4">May suggest home remedies, medication dosages, or self-diagnostic advice.</td>
+                  <td className="p-4 font-medium text-brand-deep bg-brand-rose/10">Strict educational limits. Always emphasizes pediatrician consultation before actions.</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-brand-deep">Geographic Context</td>
+                  <td className="p-4">Mainly US/Western settings (Fahrenheit scales, clinical discharge systems).</td>
+                  <td className="p-4 font-medium text-brand-deep bg-brand-rose/10">Tailored to Indian households (Celsius temperatures, local hygiene parameters).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </ScrollReveal>
+      </section>
+
       {/* 3. TRUST DETAILS */}
       <section className="bg-brand-rose/20 rounded-3xl p-8 md:p-12 border border-brand-coral/15 space-y-6">
         <ScrollReveal direction="up">

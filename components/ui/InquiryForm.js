@@ -9,8 +9,6 @@ export default function InquiryForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
-    city: '',
     inquiryType: 'Premature Baby Care Education',
     message: '',
   });
@@ -38,11 +36,7 @@ export default function InquiryForm() {
       newErrors.email = 'Please enter a valid email address';
     }
 
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone Number is required';
-    } else if (!/^[0-9+\s-]{10,15}$/.test(formData.phone.trim())) {
-      newErrors.phone = 'Please enter a valid phone number';
-    }
+
 
     if (!formData.message.trim()) newErrors.message = 'Message details are required';
 
@@ -69,8 +63,6 @@ export default function InquiryForm() {
       setFormData({
         name: '',
         email: '',
-        phone: '',
-        city: '',
         inquiryType: 'Premature Baby Care Education',
         message: '',
       });
@@ -103,66 +95,37 @@ export default function InquiryForm() {
           {errors.name && <p className="text-red-500 text-xs mt-1 font-medium">{errors.name}</p>}
         </div>
 
-        {/* Email & Phone Group */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email Address *"
-              className={`w-full px-4 py-3 rounded-2xl bg-brand-white border ${
-                errors.email ? 'border-red-500' : 'border-brand-coral/20'
-              } text-brand-deep placeholder-brand-brown/50 text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300`}
-              disabled={isLoading}
-            />
-            {errors.email && <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>}
-          </div>
-          <div>
-            <input
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="Phone Number *"
-              className={`w-full px-4 py-3 rounded-2xl bg-brand-white border ${
-                errors.phone ? 'border-red-500' : 'border-brand-coral/20'
-              } text-brand-deep placeholder-brand-brown/50 text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300`}
-              disabled={isLoading}
-            />
-            {errors.phone && <p className="text-red-500 text-xs mt-1 font-medium">{errors.phone}</p>}
-          </div>
+        {/* Email Address */}
+        <div>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Email Address *"
+            className={`w-full px-4 py-3 rounded-2xl bg-brand-white border ${
+              errors.email ? 'border-red-500' : 'border-brand-coral/20'
+            } text-brand-deep placeholder-brand-brown/50 text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300`}
+            disabled={isLoading}
+          />
+          {errors.email && <p className="text-red-500 text-xs mt-1 font-medium">{errors.email}</p>}
         </div>
 
-        {/* City & Type */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <input
-              type="text"
-              name="city"
-              value={formData.city}
-              onChange={handleChange}
-              placeholder="City (Optional)"
-              className="w-full px-4 py-3 rounded-2xl bg-brand-white border border-brand-coral/20 text-brand-deep placeholder-brand-brown/50 text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300"
-              disabled={isLoading}
-            />
-          </div>
-          <div>
-            <select
-              name="inquiryType"
-              value={formData.inquiryType}
-              onChange={handleChange}
-              className="w-full px-4 py-3 rounded-2xl bg-brand-white border border-brand-coral/20 text-brand-deep text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300 cursor-pointer"
-              disabled={isLoading}
-            >
-              {inquiryOptions.map((opt) => (
-                <option key={opt} value={opt}>
-                  {opt}
-                </option>
-              ))}
-            </select>
-          </div>
+        {/* Inquiry Type */}
+        <div>
+          <select
+            name="inquiryType"
+            value={formData.inquiryType}
+            onChange={handleChange}
+            className="w-full px-4 py-3 rounded-2xl bg-brand-white border border-brand-coral/20 text-brand-deep text-sm focus:outline-none focus:ring-2 focus:ring-brand-coral/20 transition-all duration-300 cursor-pointer"
+            disabled={isLoading}
+          >
+            {inquiryOptions.map((opt) => (
+              <option key={opt} value={opt}>
+                {opt}
+              </option>
+            ))}
+          </select>
         </div>
 
         {/* Message */}

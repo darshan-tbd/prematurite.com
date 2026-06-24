@@ -63,6 +63,13 @@ export default function MedicalDisclaimerPage() {
           By utilizing our educational guides and checklists, you acknowledge that Prematurite Digital Health, its editorial team, and partners are not responsible or liable for any decisions made based on this content. All home care adjustments, feeding coordinate schedules, and growth milestone tracks should be reviewed and approved by your pediatrician.
         </p>
 
+        <h2 className="font-display font-bold text-brand-deep text-lg md:text-xl mt-6">
+          4. Educational Alignment with Professional Guidelines
+        </h2>
+        <p>
+          Our resources are modeled around established neonatology educational guides, including protocols published by the World Health Organization (WHO) and the Indian Academy of Pediatrics (IAP). These guidelines are compiled strictly for parent literacy and general awareness. They do not constitute custom medical directives and must never override local, primary pediatrician orders or specific hospital discharge summaries.
+        </p>
+
         <div className="pt-6 border-t border-brand-coral/10 text-center">
           <Button href="/contact/" id="disclaimer-contact-btn">
             Contact Editorial Team
