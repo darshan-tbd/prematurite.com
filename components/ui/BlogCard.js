@@ -14,11 +14,7 @@ export default function BlogCard({ post }) {
             <User className="w-3.5 h-3.5 mr-1" />
             {author}
           </span>
-          <span className="w-1.5 h-1.5 rounded-full bg-brand-coral/30" />
-          <span className="flex items-center">
-            <Calendar className="w-3.5 h-3.5 mr-1" />
-            {date}
-          </span>
+
           <span className="w-1.5 h-1.5 rounded-full bg-brand-coral/30" />
           <span className="flex items-center">
             <Clock className="w-3.5 h-3.5 mr-1" />

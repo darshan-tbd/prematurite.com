@@ -53,7 +53,7 @@ export default async function BlogDetailPage({ params }) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 space-y-12 md:space-y-16" id={`blog-detail-${slug}`}>
-      
+
       {/* Back button */}
       <div>
         <Link
@@ -73,18 +73,14 @@ export default async function BlogDetailPage({ params }) {
         <h1 className="text-2xl md:text-4xl font-display font-extrabold text-brand-deep leading-tight">
           {post.title}
         </h1>
-        
+
         {/* Author / Date / Time line */}
         <div className="flex flex-wrap gap-4 items-center text-xs md:text-sm text-brand-brown/70 font-semibold pt-2">
           <span className="flex items-center">
             <User className="w-4 h-4 mr-1.5 text-brand-coral" />
             {post.author}
           </span>
-          <span>•</span>
-          <span className="flex items-center">
-            <Calendar className="w-4 h-4 mr-1.5 text-brand-coral" />
-            {post.date}
-          </span>
+
           <span>•</span>
           <span className="flex items-center">
             <Clock className="w-4 h-4 mr-1.5 text-brand-coral" />
@@ -95,7 +91,7 @@ export default async function BlogDetailPage({ params }) {
 
       {/* 2. ARTICLE LAYOUT GRID */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        
+
         {/* Left column - Table of Contents & Related items */}
         <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-24 order-last lg:order-first">
           {/* Table of Contents */}
@@ -140,7 +136,7 @@ export default async function BlogDetailPage({ params }) {
         {/* Right column - Article Body (800+ words rendered dynamically) */}
         <div className="lg:col-span-8 bg-brand-white border border-brand-coral/15 rounded-3xl p-6 md:p-8 shadow-soft">
           <div className="prose prose-stone max-w-none text-brand-brown text-sm md:text-base leading-relaxed space-y-6">
-            
+
             {post.content.map((block, idx) => {
               if (block.type === 'paragraph') {
                 return (
